@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/projects/nasp_tsp_greedy/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/embed.manifest"
