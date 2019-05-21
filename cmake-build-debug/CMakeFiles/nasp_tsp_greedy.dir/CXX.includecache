@@ -26,6 +26,18 @@ ctime
 netezinski_graf.h
 C:/projects/nasp_tsp_greedy/netezinski_graf.h
 
+C:/projects/nasp_tsp_greedy/greedy.h
+iostream
+-
+vector
+-
+graf.h
+C:/projects/nasp_tsp_greedy/graf.h
+
+C:/projects/nasp_tsp_greedy/lista.h
+vector
+-
+
 C:/projects/nasp_tsp_greedy/main.cpp
 iostream
 -
@@ -33,8 +45,12 @@ vector
 -
 ctime
 -
+lista.h
+C:/projects/nasp_tsp_greedy/lista.h
 graf.h
 C:/projects/nasp_tsp_greedy/graf.h
+greedy.h
+C:/projects/nasp_tsp_greedy/greedy.h
 
 C:/projects/nasp_tsp_greedy/netezinski_graf.h
 vector

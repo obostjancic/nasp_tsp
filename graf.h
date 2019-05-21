@@ -120,7 +120,6 @@ int duzinaTure(vector<vector<int>> &udaljenosti, vector<int> &tura) {
 
     for (int i = 0; i < n; i++)
         duzina_ture += udaljenosti[tura[i]][tura[(i + 1) % n]];
-
     return duzina_ture;
 }
 
@@ -329,7 +328,6 @@ vector<int> _2OptSaRandom(vector<vector<int>> &udaljenosti) {
     return tura;
 }
 
-
 vector<int> _2OptSaRandomMax(vector<vector<int>> &udaljenosti) {
     int broj_cvorova = udaljenosti.size();
     vector<int> tura(broj_cvorova);
@@ -380,7 +378,6 @@ void _2OptSaPocetnom(vector<vector<int>> &udaljenosti, vector<int> &tura) {
     }
 
 }
-
 
 int _3OptSaPocetnom(vector<vector<int>> &udaljenosti, vector<int> &tura) {
     int broj_cvorova = tura.size();
@@ -513,124 +510,6 @@ int iscrpnaPretraga(vector<vector<int>> &udaljenosti) {
 
     return najkraca_tura;
 
-}
-
-int dioTure(vector<int> &tura, int pocetak, int pocetni) {
-    for (int i = pocetak; i < tura.size(); i++)
-        if (tura[i] == pocetni)
-            return i;
-
-    return 0;
-}
-
-int krajKomponente(vector<int> &tura, int pocetak, int pocetni) {
-    for(int i = pocetak; i < tura.size(); i++) {
-        if (tura[i] == pocetni)
-            return i;
-        if (i == tura.size() - 1)
-            return i;
-    }
-    return pocetak;
-}
-
-void spojiKomponente(vector<int> &tura, int poc_1, int poc_2, int pocetni) {
-    int kraj_1 = krajKomponente(tura, poc_1, pocetni);
-    int kraj_2 = krajKomponente(tura, poc_2, pocetni);
-    if (poc_1 < poc_2)
-        for (int i = 0; i <= kraj_2 - poc_2; i++) {
-            int temp = tura[poc_2 + i];
-            tura.erase(tura.begin() + poc_2 + i);
-            tura.insert(tura.begin() + kraj_1 + i, temp);
-        }
-    else {
-        for (int i = 0; i <= kraj_2 - poc_2; i++) {
-            int temp = tura[poc_2];
-            tura.insert(tura.begin() + kraj_1, temp);
-            tura.erase(tura.begin() + poc_2);
-        }
-    }
-    for (int i = 1; i < tura.size() -1; i++) {
-        if (tura[i-1] == tura[i] && tura[i] == pocetni) {
-            tura.erase(tura.begin() + i);
-            i--;
-        }
-    }
-}
-
-bool uIstojKomponenti(vector<int> &tura, int prvi, int drugi, int pocetni) {
-    if(prvi > drugi) {
-        int temp = prvi;
-        prvi = drugi;
-        drugi = temp;
-    }
-    for (int i = prvi; i <= drugi; i++) {
-        if(tura[i] == pocetni)
-            return false;
-    }
-    return true;
-}
-
-
-int greedy(Graf g) {
-
-    int n = g.udaljenosti.size();
-    int pocetni = 0;
-    vector<int> tura(n * 2 - 2 );
-    for (int i = 0; i < n * 2 - 2; i++)
-        if (i % 2 != 0 && i / 2 + 1 != pocetni)
-            tura[i] = i / 2 + 1;
-        else
-            tura[i] = pocetni;
-   // cout << endl;
-   // ispisiTuru(tura);
-//    cout << provjeriTuru(tura) << endl;
-  //  cout << duzinaTure(g.udaljenosti, tura) << endl;
-    for (int swaps = 0; swaps < n; swaps++) {
-        int max_usteda = 0, i_max = pocetni, j_max = pocetni;
-        for (int i = 0; i < tura.size(); i++) {
-            if (i < tura.size() - 1 && tura[i+1] == pocetni) {
-                for (int j = 0; j < tura.size(); j++) {
-                    if (j > 0 && tura[j-1] == pocetni && j != i - 1) {
-                        if (tura[i] != pocetni && tura[j] != pocetni && tura[i] != tura[j] && !uIstojKomponenti(tura, i, j, pocetni)) {
-                            int usteda = g.udaljenosti[pocetni][tura[i]] + g.udaljenosti[pocetni][tura[j]] -
-                                         g.udaljenosti[tura[i]][tura[j]];
-                            if (usteda > max_usteda) {
-                                max_usteda = usteda;
-                                i_max = i;
-                                j_max = j;
-                            }
-
-                        }
-                    }
-                }
-            }
-        }
-        if (max_usteda > 0) {
-            //cout << "Stedim: " << max_usteda << " zamijenom " << tura[i_max] << " i " << tura[j_max] << endl;
-            spojiKomponente(tura, i_max, j_max, pocetni);
-        }
-//        cout << "brisem ";
-//        for (int idx = 0; idx < tura.size() - 1; idx++) {
-//            if(tura[idx] == pocetni && tura[idx+1] == pocetni) {
-//                cout<< "nasao "<< idx << endl;
-//                tura.erase(tura.begin() + idx, tura.erase(tura.begin() + idx));
-//                idx --;
-//            }
-//        }
-
-        //cout << "Nova tura: ";
-        //ispisiTuru(tura);
-    }
-
-    for(int i = 0; i < tura.size(); i++){
-        if (i != 0 && tura[i] == pocetni) {
-            tura.erase(tura.begin() + i);
-            i--;
-        }
-    }
-    cout << "Greedy algoritam - tura: ";
-    ispisiTuru(tura);
-    return duzinaTure(g.udaljenosti, tura);
 }
 
 

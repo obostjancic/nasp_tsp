@@ -3,5 +3,7 @@
 
 CMakeFiles/nasp_tsp_greedy.dir/main.cpp.obj
  C:/projects/nasp_tsp_greedy/graf.h
+ C:/projects/nasp_tsp_greedy/greedy.h
+ C:/projects/nasp_tsp_greedy/lista.h
  C:/projects/nasp_tsp_greedy/main.cpp
  C:/projects/nasp_tsp_greedy/netezinski_graf.h

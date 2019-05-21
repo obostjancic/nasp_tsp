@@ -83,6 +83,12 @@
 		<Unit filename="C:/projects/nasp_tsp_greedy/graf.h">
 			<Option target="nasp_tsp_greedy"/>
 		</Unit>
+		<Unit filename="C:/projects/nasp_tsp_greedy/greedy.h">
+			<Option target="nasp_tsp_greedy"/>
+		</Unit>
+		<Unit filename="C:/projects/nasp_tsp_greedy/lista.h">
+			<Option target="nasp_tsp_greedy"/>
+		</Unit>
 		<Unit filename="C:/projects/nasp_tsp_greedy/main.cpp">
 			<Option target="nasp_tsp_greedy"/>
 		</Unit>
