@@ -35,9 +35,6 @@ class Lista {
         bool prazna() { 
             return velicina == 0;
         }
-        Cvor * getPocetak() {
-            return pocetak; 
-        }
         Cvor * get(int indeks) {
             int i = 0;
             for(Cvor *trenutni = pocetak; trenutni != nullptr; trenutni =trenutni->sljedeci) {
@@ -50,9 +47,6 @@ class Lista {
         T operator[] (int indeks) {
             return get(indeks)->element;
         }
-        Cvor * getKraj() {
-            return kraj; 
-        }
         int size() {
             return velicina;
         }
@@ -61,10 +55,6 @@ class Lista {
         void insert(int indeks, T element);
         void izbrisi(Cvor *pok);
         void izbrisi(int indeks);
-        void swap(Cvor* pok1, Cvor* pok2);
-        void smanjiVelicinu() {
-            velicina--;
-        }
         void print() {
             for(Cvor *trenutni = pocetak; trenutni != nullptr; trenutni =trenutni->sljedeci)
                 cout << trenutni->element << " ";
@@ -155,7 +145,7 @@ void Lista<T>::izbrisi(int indeks) {
 }
 template <typename T>
 Lista<T>::~Lista() {
-    while(!prazna())
+    for (int i = 0; i < velicina; i++)
         izbrisi(pocetak);
 }
 
@@ -173,14 +163,6 @@ Lista<T>& Lista<T>:: operator=(Lista<T> &drugi) {
     for(Cvor *trenutni = drugi.pocetak; trenutni! = nullptr; trenutni = trenutni->sljedeci)
         dodajNaKraj(trenutni->element);
     return *this;
-}
-
-template <typename T>
-void Lista<T>::swap(Cvor* pok1, Cvor* pok2)
-{
-    T temp = pok1->element;
-    pok1->element = pok2->element;
-    pok2->element = temp;
 }
 
 

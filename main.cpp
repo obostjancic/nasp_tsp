@@ -10,14 +10,18 @@ using namespace std;
 
 int main() {
     Graf G("test.txt");
-    vector<int> tura = turaNS(G.udaljenosti,0);
-    cout << turaNajbliziSusjed(G.udaljenosti, 0) << endl;
-    cout << G.turaNajmanjaGrana() << endl;
+    cout << "Najblizi susjed:         " << turaNajbliziSusjed(G.udaljenosti, 0) << endl;
+    cout << "Najmanja grana:          " << G.turaNajmanjaGrana() << endl;
+    vector<int> tura = G.vratiTuraNajmanjaGrana();
+//    cout << "2 Opt Random:            " << duzinaTure(G.udaljenosti, tura) << endl;
+//    cout << "Greedy 2 Opt Random:     " << greedy(G.udaljenosti, tura) << endl;
+//    tura = _2OptSaRandomMax(G.udaljenosti);
+//    cout << "2 Opt Random Max:        " << duzinaTure(G.udaljenosti, tura) << endl;
+//    cout << "Greedy 2 Opt Random Max: " << greedy(G.udaljenosti, tura) << endl;
+//    vector<int> tura = _3OptSaRandom(G.udaljenosti);
+//    cout << "3 Opt Random:            " << duzinaTure(G.udaljenosti, tura) << endl;
+    cout << "Greedy 3 Opt Random:     " << greedy(G.udaljenosti, tura) << endl;
+    cout << "Greedy random:           " << greedy(G.udaljenosti) << endl;
 
-    clock_t start = clock();
-    tura = G.vratiTuraNajmanjaGrana();
-    cout << greedy(G.udaljenosti, tura, 0) << endl;
-    clock_t afterGreedy = clock();
-    cout << "Greedy: " << double(afterGreedy - start) / CLOCKS_PER_SEC << endl;
     return 0;
 }

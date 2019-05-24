@@ -12,21 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="139f02b0-1b10-4ebd-aa48-7c4aa259fb23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/greedy.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lista.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nasp_tsp_greedy.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/nasp_tsp_greedy.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graf.h" beforeDir="false" afterPath="$PROJECT_DIR$/graf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greedy.h" beforeDir="false" afterPath="$PROJECT_DIR$/greedy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lista.h" beforeDir="false" afterPath="$PROJECT_DIR$/lista.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,21 +35,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graf.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+            <state relative-caret-position="10166">
+              <caret line="391" column="12" selection-start-line="391" selection-start-column="5" selection-end-line="391" selection-end-column="12" />
               <folding>
                 <element signature="e#106#123#0" expanded="true" />
                 <element signature="e#1211#2135#0" />
                 <element signature="e#2137#2975#0" />
-                <element signature="e#3222#3352#0" />
-                <element signature="e#3354#3749#0" />
-                <element signature="e#6304#7283#0" />
-                <element signature="e#7285#7500#0" />
-                <element signature="e#7502#8482#0" />
-                <element signature="e#8484#9402#0" />
               </folding>
             </state>
           </provider>
@@ -62,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="312">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -71,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="104">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -88,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/djibouti.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="962">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -97,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/luksemburg.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12974">
-              <caret line="499" column="24" selection-end-line="499" selection-end-column="24" />
+            <state>
+              <caret selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -106,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/greedy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="190" column="19" selection-start-line="190" selection-start-column="19" selection-end-line="190" selection-end-column="19" />
+            <state relative-caret-position="4784">
+              <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
               <folding>
                 <element signature="e#110#129#0" expanded="true" />
               </folding>
@@ -118,19 +108,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lista.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="1456">
+              <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
               <folding>
                 <element signature="e#158#170#0" expanded="true" />
-                <element signature="e#968#980#0" expanded="true" />
-                <element signature="e#1134#1146#0" expanded="true" />
-                <element signature="e#1345#1357#0" expanded="true" />
-                <element signature="e#1622#1634#0" expanded="true" />
-                <element signature="e#3441#3453#0" expanded="true" />
-                <element signature="e#2814#2826#0" expanded="true" />
-                <element signature="e#2907#2919#0" expanded="true" />
-                <element signature="e#3150#3162#0" expanded="true" />
-                <element signature="e#2880#2892#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,7 +119,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bih.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="99" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -165,7 +150,14 @@
       <find>izbrisi</find>
       <find>ista</find>
       <find>curr</find>
+      <find>tura.pr</find>
+      <find>_3Opt</find>
       <find>cout</find>
+      <find>ispisi</find>
+      <find>duzina</find>
+      <find>Lista</find>
+      <find>tura.print</find>
+      <find>3OptSaP</find>
     </findStrings>
     <replaceStrings>
       <replace>Cvor</replace>
@@ -186,14 +178,15 @@
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/greedy.cpp" />
         <option value="$PROJECT_DIR$/Lista.h" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/test.txt" />
         <option value="$PROJECT_DIR$/lista.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/greedy.h" />
         <option value="$PROJECT_DIR$/graf.h" />
+        <option value="$PROJECT_DIR$/greedy.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/test.txt" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1592" />
     <option name="y" value="-193" />
@@ -206,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,13 +215,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -271,16 +266,19 @@
       <workItem from="1557775223919" duration="3546000" />
       <workItem from="1557835414544" duration="5718000" />
       <workItem from="1558372615484" duration="14670000" />
+      <workItem from="1558594764681" duration="14706000" />
+      <workItem from="1558681842497" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41941000" />
+    <option name="totallyTimeSpent" value="57264000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-193" width="1936" height="1056" extended-state="6" />
+    <frame x="1592" y="-235" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20095949" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20522387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -397,22 +395,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/graf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10166">
+          <caret line="391" column="12" selection-start-line="391" selection-start-column="5" selection-end-line="391" selection-end-column="12" />
+          <folding>
+            <element signature="e#106#123#0" expanded="true" />
+            <element signature="e#1211#2135#0" />
+            <element signature="e#2137#2975#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sahara.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/djibouti.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="962">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/luksemburg.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12974">
-          <caret line="499" column="24" selection-end-line="499" selection-end-column="24" />
+        <state>
+          <caret selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4784">
+          <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
+          <folding>
+            <element signature="e#110#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lista.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding>
+            <element signature="e#158#170#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bih.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="99" selection-end-column="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netezinski_graf.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -426,68 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sahara.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lista.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#158#170#0" expanded="true" />
-            <element signature="e#968#980#0" expanded="true" />
-            <element signature="e#1134#1146#0" expanded="true" />
-            <element signature="e#1345#1357#0" expanded="true" />
-            <element signature="e#1622#1634#0" expanded="true" />
-            <element signature="e#3441#3453#0" expanded="true" />
-            <element signature="e#2814#2826#0" expanded="true" />
-            <element signature="e#2907#2919#0" expanded="true" />
-            <element signature="e#3150#3162#0" expanded="true" />
-            <element signature="e#2880#2892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greedy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="190" column="19" selection-start-line="190" selection-start-column="19" selection-end-line="190" selection-end-column="19" />
-          <folding>
-            <element signature="e#110#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
-          <folding>
-            <element signature="e#106#123#0" expanded="true" />
-            <element signature="e#1211#2135#0" />
-            <element signature="e#2137#2975#0" />
-            <element signature="e#3222#3352#0" />
-            <element signature="e#3354#3749#0" />
-            <element signature="e#6304#7283#0" />
-            <element signature="e#7285#7500#0" />
-            <element signature="e#7502#8482#0" />
-            <element signature="e#8484#9402#0" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

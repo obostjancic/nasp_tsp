@@ -93,14 +93,13 @@ bool uIstojKomponenti(Lista<int> &tura, int prvi, int drugi, int pocetni) {
  * Pomocna funkcija. Kreira pocetnu turu po specifikaciji projekta. Mijenja proslijedjeni parametar tura
  * @param tura
  * @param n - broj gradova
- * @param pocetni - element koji predstavlja pocetni grad
  */
-void pocetnaTura(Lista<int> &tura, int n, int pocetni) {
+void pocetnaTura(Lista<int> &tura, int n) {
     for (int i = 0; i < n * 2 - 2; i++)
-        if (i % 2 != 0 && i / 2 + 1 != pocetni)
-            tura.insert(i, i / 2 + 1);
+        if (i % 2 != 0)
+            tura.dodajNaKraj(i / 2 + 1);
         else
-            tura.insert(i, pocetni);
+            tura.dodajNaKraj(0);
 }
 
 /**
@@ -110,14 +109,12 @@ void pocetnaTura(Lista<int> &tura, int n, int pocetni) {
  * @param n - broj gradova
  * @param pocetni - element koji predstavlja pocetni grad
  */
-void pocetnaTura(Lista<int> &tura, vector<int> &baznaTura, int n, int pocetni) {
-    ispisiTuru(baznaTura);
-    for (int i = 0; i < n * 2 ; i++)
+void pocetnaTura(Lista<int> &tura, vector<int> &baznaTura, int n) {
+    for (int i = 0; i < n * 2 - 2; i++)
         if (i % 2 != 0)
-            tura.insert(i, baznaTura[i / 2]);
+            tura.dodajNaKraj(baznaTura[i / 2 + 1]);
         else
-            tura.insert(i, pocetni);
-    obrisiDuple(tura, pocetni);
+            tura.dodajNaKraj(baznaTura[0]);
 }
 
 /**
@@ -159,21 +156,21 @@ void maxUsteda(Lista<int> &tura, vector<vector<int>> &udaljenosti, int& max_uste
  * @param pocetni - element koji predstavlja pocetni grad
  * @return duzina ture
  */
-int greedy(vector<vector<int>> &udaljenosti, vector<int> &baznaTura, int pocetni) {
+int greedy(vector<vector<int>> &udaljenosti, vector<int> &baznaTura) {
 
     int n = udaljenosti.size();
     auto tura = Lista<int>();
     if (baznaTura.empty())
-        pocetnaTura(tura, n, pocetni);
+        pocetnaTura(tura, n);
     else
-        pocetnaTura(tura, baznaTura, n, pocetni);
+        pocetnaTura(tura, baznaTura, n);
+    int pocetni = tura[0];
 
     for (int brKomponenti = n; brKomponenti > 0; brKomponenti--) {
         int max_usteda = 0, i_max, j_max;
 
         maxUsteda(tura, udaljenosti, max_usteda, i_max, j_max, pocetni);
         if (max_usteda > 0) {
-            tura.print();
             spojiKomponente(tura, i_max, j_max, pocetni);
         }
     }
@@ -185,9 +182,8 @@ int greedy(vector<vector<int>> &udaljenosti, vector<int> &baznaTura, int pocetni
             i--;
         }
     }
-
+    cout << tura.size() << endl;
     auto turaVektor = tura.uVektor();
-    ispisiTuru(turaVektor);
     return duzinaTure(udaljenosti, turaVektor);
 }
 
@@ -197,9 +193,19 @@ int greedy(vector<vector<int>> &udaljenosti, vector<int> &baznaTura, int pocetni
  * @param pocetni - element koji predstavlja pocetni grad
  * @return duzina ture
  */
-int greedy(vector<vector<int>> &udaljenosti, int pocetni) {
+int greedy(vector<vector<int>> &udaljenosti) {
     vector<int> baznaTura;
-    return greedy(udaljenosti, baznaTura, pocetni);
+    return greedy(udaljenosti, baznaTura);
 }
+
+int greedyRandom(vector<vector<int>> &udaljenosti) {
+    int broj_cvorova = udaljenosti.size();
+    vector<int> tura(broj_cvorova);
+    for (int i = 0; i < broj_cvorova; i++)
+        tura[i] = i;
+
+    return greedy(udaljenosti, tura);
+}
+
 
 #endif //NASP_TSP_GREEDY_GREEDY_H

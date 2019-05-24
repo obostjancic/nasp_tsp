@@ -15,6 +15,7 @@
 #include <ctime>
 
 #include "netezinski_graf.h"
+#include "lista.h"
 
 using namespace std;
 
@@ -115,6 +116,15 @@ Graf::Graf(string filename) {
 }
 
 int duzinaTure(vector<vector<int>> &udaljenosti, vector<int> &tura) {
+    int duzina_ture = 0;
+    int n = tura.size();
+
+    for (int i = 0; i < n; i++)
+        duzina_ture += udaljenosti[tura[i]][tura[(i + 1) % n]];
+    return duzina_ture;
+}
+
+int duzinaTure(vector<vector<int>> &udaljenosti, Lista<int> &tura) {
     int duzina_ture = 0;
     int n = tura.size();
 
@@ -354,7 +364,7 @@ vector<int> _2OptSaRandomMax(vector<vector<int>> &udaljenosti) {
         if (najveca_usteda == 0)
             break;
         Zamijeni_Grane(tura, indeks_i, indeks_j);
-        cout << duzinaTure(udaljenosti, tura) << endl;
+        //cout << duzinaTure(udaljenosti, tura) << endl;
     }
     return tura;
 }
@@ -394,7 +404,7 @@ int _3OptSaPocetnom(vector<vector<int>> &udaljenosti, vector<int> &tura) {
                           + udaljenosti[tura[i + 1]][tura[(j + 1)]]
                           + udaljenosti[tura[j]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 3);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
                     if (udaljenosti[tura[i]][tura[i + 1]]
@@ -404,7 +414,7 @@ int _3OptSaPocetnom(vector<vector<int>> &udaljenosti, vector<int> &tura) {
                           + udaljenosti[tura[i + 1]][tura[k]]
                           + udaljenosti[tura[j]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 2);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
                     if (udaljenosti[tura[i]][tura[i + 1]]
@@ -414,7 +424,7 @@ int _3OptSaPocetnom(vector<vector<int>> &udaljenosti, vector<int> &tura) {
                           + udaljenosti[tura[i + 1]][tura[k]]
                           + udaljenosti[tura[j + 1]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 1);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
                     if (udaljenosti[tura[i]][tura[i + 1]]
@@ -424,7 +434,7 @@ int _3OptSaPocetnom(vector<vector<int>> &udaljenosti, vector<int> &tura) {
                           + udaljenosti[tura[k]][tura[(j)]]
                           + udaljenosti[tura[i + 1]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 0);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
 
@@ -454,7 +464,7 @@ vector<int> _3OptSaRandom(vector<vector<int>> &udaljenosti) {
                           + udaljenosti[tura[i + 1]][tura[(j + 1)]]
                           + udaljenosti[tura[j]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 3);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
                     if (udaljenosti[tura[i]][tura[i + 1]]
@@ -464,7 +474,7 @@ vector<int> _3OptSaRandom(vector<vector<int>> &udaljenosti) {
                           + udaljenosti[tura[i + 1]][tura[k]]
                           + udaljenosti[tura[j]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 2);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
                     if (udaljenosti[tura[i]][tura[i + 1]]
@@ -474,7 +484,7 @@ vector<int> _3OptSaRandom(vector<vector<int>> &udaljenosti) {
                           + udaljenosti[tura[i + 1]][tura[k]]
                           + udaljenosti[tura[j + 1]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 1);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
                     if (udaljenosti[tura[i]][tura[i + 1]]
@@ -484,7 +494,7 @@ vector<int> _3OptSaRandom(vector<vector<int>> &udaljenosti) {
                           + udaljenosti[tura[k]][tura[(j)]]
                           + udaljenosti[tura[i + 1]][tura[(k + 1) % broj_cvorova]]) {
                         Zamijeni_Grane(tura, i, j, k, 0);
-                        cout << duzinaTure(udaljenosti, tura) << endl;
+                        //cout << duzinaTure(udaljenosti, tura) << endl;
                         nadjena_bolja_tura = true;
                     }
 
